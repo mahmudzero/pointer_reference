@@ -2,15 +2,15 @@
 
 int main() {
 	// allocate memory for int pointer
-	int *z;
+	int *x;
 	// point to null (i.e. mem address 0)
-	z = 0;
-	printf("z: %p\n", (void*)z);
-	printf("z: %i\n", *z);
+	x = 0;
+	printf("x: %p\n", (void*)x);
+	printf("x: %i\n", *x);
 	// try to write to null,
 	// segfault
-	*z = 5;
-	printf("z: %p\n", (void*)z);
-	printf("z: %i\n", *z);
+	*x = 5;
+	printf("x: %p\n", (void*)x);
+	printf("x: %i\n", *x);
 	return 0;
 }
